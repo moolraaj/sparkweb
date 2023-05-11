@@ -20,7 +20,7 @@ export default function Herosection(props) {
             <div className='hero-section-inner'>
               <div className="hero-section-first-div">
 
-                <p style={{ color: props.theme === 'dark' ? "#fff" : "#F24B74" }}>loream ipsum</p>
+                <p style={{ color: props.theme === 'dark' ? "#fff" : "#F24B74" }}>hii user</p>
 
               </div>
               <div className='hero-section-heading'>
