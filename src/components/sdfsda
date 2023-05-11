@@ -1,0 +1,24 @@
+
+$("#inp_user_phone").on("change", function() {
+    var phone_number = $(this).val();
+    if(!phone_number.match(/^\d{10}$/)) {
+        $("#phone-error").text("Please enter a valid 10 digit phone number.").show();
+    } else {
+        $("#phone-error").text("").hide();
+    }
+});
+
+
+
+const $log_password=$('#log_password')
+const $con_pass=$('#con_pass')
+$con_pass.on('click',function(){
+    if($log_password.attr('type')==='password'){
+        $log_password.attr('type','text')
+        $con_pass.addClass('show-text')
+    }
+    else{
+        $log_password.attr('type','password')
+        $con_pass.removeClass('show-text')
+    }
+})
