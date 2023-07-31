@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/moolraaj/newsparkwebsite.git/static/css/main.48cad845.css",
+    "main.js": "/moolraaj/newsparkwebsite.git/static/js/main.f7eff3ae.js",
+    "static/js/845.d21fc75c.chunk.js": "/moolraaj/newsparkwebsite.git/static/js/845.d21fc75c.chunk.js",
+    "static/js/787.28cb0dcd.chunk.js": "/moolraaj/newsparkwebsite.git/static/js/787.28cb0dcd.chunk.js",
+    "static/media/relax-meditate-yoga-159727.mp3": "/moolraaj/newsparkwebsite.git/static/media/relax-meditate-yoga-159727.d18b172b7eb0161169ab.mp3",
+    "static/media/montserrat.ttf": "/moolraaj/newsparkwebsite.git/static/media/montserrat.3faa3eef13649db02044.ttf",
+    "static/media/basement.otf": "/moolraaj/newsparkwebsite.git/static/media/basement.34683a87de2a604cf634.otf",
+    "static/media/sun.png": "/moolraaj/newsparkwebsite.git/static/media/sun.fd4cafb75cadb35ed01f.png",
+    "static/media/moon.png": "/moolraaj/newsparkwebsite.git/static/media/moon.b1a9468bfcc8b78b776b.png",
+    "index.html": "/moolraaj/newsparkwebsite.git/index.html",
+    "main.48cad845.css.map": "/moolraaj/newsparkwebsite.git/static/css/main.48cad845.css.map",
+    "main.f7eff3ae.js.map": "/moolraaj/newsparkwebsite.git/static/js/main.f7eff3ae.js.map",
+    "845.d21fc75c.chunk.js.map": "/moolraaj/newsparkwebsite.git/static/js/845.d21fc75c.chunk.js.map",
+    "787.28cb0dcd.chunk.js.map": "/moolraaj/newsparkwebsite.git/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48cad845.css",
+    "static/js/main.f7eff3ae.js"
+  ]
+}
