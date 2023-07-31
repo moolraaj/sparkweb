@@ -1,0 +1,23 @@
+ul.ul-navbar {
+  margin: 0px;
+  padding: 30px;
+}
+
+ul.ul-navbar {
+  display: flex;
+  column-gap: 30px;
+}
+
+ul.ul-navbar a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: montserrat;
+  font-weight: 600;
+  text-transform: capitalize;
+   
+}
+canvas {
+  height: 100vh!important;
+}
+ 

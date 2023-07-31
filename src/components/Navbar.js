@@ -1,13 +1,23 @@
-import React from 'react'
+ 
+ 
+ 
 
 
 export default function Navbar(props) {
 
+  
+   
 
+ 
+   
+ 
   return (
 
     <>
-      <nav className={`navbar bg-${props.theme} bg-${props.theme}`} id='navbar-outer' style={{ borderBottom: props.theme === 'dark' ? "1px solid #1E7CC0" : "1px solid #F24B74" }} >
+     
+      <nav className={`navbar`} id='navbar-outer' style={{ borderBottom: props.theme === 'dark' ? "1px solid #1E7CC0" : "1px solid #F24B74" ,
+    backgroundColor: props.theme === 'dark' ? "#0c073ef7" : "#fffffff7"
+    }} >
         <div className="container-fluid" id='navbar-container-section'>
           <div className='nav-phone-number'>
             <a href="tel:999999999" style={{ color: props.theme === 'dark' ? "#fff" : "#F24B74" }}>999999999</a>
@@ -36,16 +46,16 @@ export default function Navbar(props) {
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3" id='navbar-toggle-ul'>
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">Home</a>
+                  <a className="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">contact us</a>
+                  <a className="nav-link active" aria-current="page" href="/">contact us</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">about us</a>
+                  <a className="nav-link active" aria-current="page" href="/">about us</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">our services</a>
+                  <a className="nav-link active" aria-current="page" href="/">our services</a>
                 </li>
 
 
@@ -55,6 +65,11 @@ export default function Navbar(props) {
           </div>
         </div>
       </nav>
+      
+
+       
+     
+
 
 
     </>

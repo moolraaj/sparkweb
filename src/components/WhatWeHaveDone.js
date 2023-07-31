@@ -1,6 +1,9 @@
 import React from 'react'
+import Marquee from 'react-fast-marquee'
 
 export default function WhatWeHaveDone(props) {
+    
+
     return (
         <>
 
@@ -9,19 +12,19 @@ export default function WhatWeHaveDone(props) {
 
                     {/* --services section heading first starts--*/}
                     <div className="heading-right">
-                        <marquee direction="left" scrollamount='30'>
-                            <h1 style={{ color: props.theme === 'light' ? '#f24b74' : '#1E7CC0' }}>what we have done</h1>
-                        </marquee>
-                    </div>
+                    <Marquee play pauseOnHover speed={20} >
+                             <h1 style={{ color: props.theme === 'light' ? '#f24b74' : '#1E7CC0' }}>what we have done</h1>
+                             </Marquee>
+                     </div>
                     {/* --services section heading first ends--*/}
 
 
                     {/* --services section heading second starts--*/}
                     <div className="heading-left">
-                        <marquee direction="right" scrollamount='10'>
-                            <h1 style={{ color: props.theme === 'light' ? '#202021' : '#fff' }}>what we have done</h1>
-                        </marquee>
-                    </div>
+                    <Marquee play pauseOnHover    direction='right' speed={60} gradientWidth={10}>
+                             <h1 style={{ color: props.theme === 'light' ? '#202021' : '#fff' }}>what we have done</h1>
+                             </Marquee>
+                     </div>
                     {/* --services section heading second ends--*/}
 
                     <div className='services-conatiner-outer'>
@@ -29,7 +32,7 @@ export default function WhatWeHaveDone(props) {
                             {/* --services section first--*/}
                             <div className='services-first services-section' style={{ background: props.theme === 'light' ? '#f24b74' : '#1E7CC0' }}>
                                 <div className="site-name service-info">
-                                    <a href="#">hopingminds.com</a>
+                                    <a href="/">hopingminds.com</a>
                                 </div>
                                 <div className="site-admin-name service-info">
                                     <h2>mr chinedu</h2>
@@ -44,7 +47,7 @@ export default function WhatWeHaveDone(props) {
                             {/* --services section second starts--*/}
                             <div className='services-second services-section' style={{ background: props.theme === 'light' ? '#f24b74' : '#1E7CC0' }}>
                                 <div className="site-name service-info">
-                                    <a href="#">hopingminds.com</a>
+                                    <a href="/">hopingminds.com</a>
                                 </div>
                                 <div className="site-admin-name service-info">
                                     <h2>mr chinedu</h2>
@@ -59,7 +62,7 @@ export default function WhatWeHaveDone(props) {
                             {/* --services section third starts--*/}
                             <div className='services-second services-section' style={{ background: props.theme === 'light' ? '#f24b74' : '#1E7CC0' }}>
                                 <div className="site-name service-info">
-                                    <a href="#">hopingminds.com</a>
+                                    <a href="/">hopingminds.com</a>
                                 </div>
                                 <div className="site-admin-name service-info">
                                     <h2>mr chinedu</h2>
@@ -74,7 +77,7 @@ export default function WhatWeHaveDone(props) {
                             {/* --services section fourth starts--*/}
                             <div className='services-second services-section' style={{ background: props.theme === 'light' ? '#f24b74' : '#1E7CC0' }}>
                                 <div className="site-name service-info">
-                                    <a href="#">hopingminds.com</a>
+                                    <a href="/">hopingminds.com</a>
                                 </div>
                                 <div className="site-admin-name service-info">
                                     <h2>mr chinedu</h2>

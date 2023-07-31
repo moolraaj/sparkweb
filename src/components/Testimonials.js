@@ -1,25 +1,27 @@
 import React from 'react'
+import Marquee from 'react-fast-marquee'
 
 export default function Testimonials(props) {
+    
     return (
         <div className="testimonial-outer">
             <div className="testimonial-inner">
 
                 {/* --testimolials heading first starts--*/}
                 <div className="heading-right">
-                    <marquee direction="left" scrollamount='30'>
-                        <h1 style={{ color: props.theme === 'light' ? '#f24b74' : '#1E7CC0' }}>testimonials testimonials</h1>
-                    </marquee>
-                </div>
+                <Marquee play pauseOnHover speed={20} >
+                         <h1 style={{ color: props.theme === 'light' ? '#f24b74' : '#1E7CC0' }}>testimonials testimonials</h1>
+                         </Marquee>
+                 </div>
                 {/* --testimolials heading first ends--*/}
 
 
                 {/* --testimolials heading second starts--*/}
                 <div className="heading-left">
-                    <marquee direction="right" scrollamount='10'>
-                        <h1 style={{ color: props.theme === 'light' ? '#202021' : '#fff' }}>testimonials testimonials</h1>
-                    </marquee>
-                </div>
+                <Marquee play pauseOnHover    direction='right' speed={60} gradientWidth={10}>
+                         <h1 style={{ color: props.theme === 'light' ? '#202021' : '#fff' }}>testimonials testimonials</h1>
+                         </Marquee>
+                 </div>
                 {/* --testimolials heading second ends--*/}
 
 
@@ -63,7 +65,7 @@ export default function Testimonials(props) {
                                     <h2 style={{color:props.theme==='light'?"#F24B74":"#1E7CC0"}}>mr cinedu</h2>
                                 </div>
                                 <div className='left-testi-text testi-text'>
-                                    <a href="#" style={{color:props.theme==='light'?"#202021":"#fff"}}>hopingminds.com</a>
+                                    <a href='/' style={{color:props.theme==='light'?"#202021":"#fff"}}>hopingminds.com</a>
                                 </div>
                             </div>
                         </div>
@@ -107,7 +109,7 @@ export default function Testimonials(props) {
                                     <h2 style={{color:props.theme==='light'?"#F24B74":"#1E7CC0"}}>mr cinedu</h2>
                                 </div>
                                 <div className='left-testi-text testi-text'>
-                                    <a href="#" style={{color:props.theme==='light'?"#202021":"#fff"}}>hopingminds.com</a>
+                                    <a href='/' style={{color:props.theme==='light'?"#202021":"#fff"}}>hopingminds.com</a>
                                 </div>
                             </div>
                         </div>
@@ -150,7 +152,7 @@ export default function Testimonials(props) {
                                     <h2 style={{color:props.theme==='light'?"#F24B74":"#1E7CC0"}}>mr cinedu</h2>
                                 </div>
                                 <div className='left-testi-text testi-text'>
-                                    <a href="#" style={{color:props.theme==='light'?"#202021":"#fff"}}>hopingminds.com</a>
+                                    <a href='/' style={{color:props.theme==='light'?"#202021":"#fff"}}>hopingminds.com</a>
                                 </div>
                             </div>
                         </div>

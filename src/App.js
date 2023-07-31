@@ -1,6 +1,5 @@
 import './components/style.css'
 import React, { useState } from 'react'
-import './App.css';
 import Navbar from './components/Navbar';
 import Herosection from './components/Herosection';
 import AboutUs from './components/AboutUs';
@@ -10,9 +9,18 @@ import Footer from './components/Footer';
 import OurServices from './components/OurServices';
 import sun from './components/images/sun.png'
 import moon from './components/images/moon.png'
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
-import { Model } from './components/Newdance';
+ 
+ 
+ 
+ 
+    
+ 
+ 
+ 
+ 
+// import { Canvas } from '@react-three/fiber';
+// import { OrbitControls } from '@react-three/drei';
+// import { Model } from './components/Newdance';
  
 
  
@@ -21,9 +29,10 @@ import { Model } from './components/Newdance';
  
  
 function App() {
+   
 
 
-   {/* --light & dark theme function made here to use everywhere--*/ }
+    
  
    const [theme, setTheme] = useState('light')
    const [img, setImg] = useState(sun)
@@ -49,9 +58,19 @@ function App() {
       }
 
    }
+    
+
+  
+
    return (
+
       <>
-       
+      <div className='app'>
+        
+
+      
+        
+ 
          {/* --navbar-section--*/}
          <Navbar  theme={theme} toggleMode={toggleMode} />
 
@@ -69,13 +88,24 @@ function App() {
         <shadowMaterial transparent opacity={0.2} />
       </mesh>
          </Canvas> */}
-         
-         <Herosection   img={img} theme={theme} toggleMode={toggleMode} />
       
+         
+             
+
+
+
+
+         <Herosection   img={img} theme={theme} toggleMode={toggleMode} />
+
+             
+         
+          
 
 
          {/* --about-us-aection--*/}
+         
          <AboutUs   theme={theme} toggleMode={toggleMode} />
+         
 
          {/* --our-services-section--*/}
          <OurServices theme={theme} toggleMode={toggleMode} />
@@ -92,7 +122,7 @@ function App() {
          {/* --footer-section--*/}
          <Footer theme={theme} toggleMode={toggleMode} /> 
           
-
+         </div>
 
       </>
    );

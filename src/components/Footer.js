@@ -27,9 +27,9 @@ export default function Footer(props) {
               <div className='social-icons'>
 
                 <ul className='footer-social-icons'>
-                  <li><a href='#'><FontAwesomeIcon icon={faFacebook} /></a></li>
-                  <li><a href='#'><FontAwesomeIcon icon={faInstagram} /></a></li>
-                  <li><a href='#'><FontAwesomeIcon icon={faSquareWhatsapp} /></a></li>
+                  <li><a href='/'><FontAwesomeIcon icon={faFacebook} /></a></li>
+                  <li><a href='/'><FontAwesomeIcon icon={faInstagram} /></a></li>
+                  <li><a href='/'><FontAwesomeIcon icon={faSquareWhatsapp} /></a></li>
                 </ul>
               </div>
             </div>
@@ -44,7 +44,7 @@ export default function Footer(props) {
               <p style={{ color: props.theme === 'light' ? '#202021' : '#fff' }}>Near Central Bank Tara Mata House kasumpti,172001,HP</p>
             </div>
             <div className="footer-second-right">
-              <p style={{ color: props.theme === 'light' ? '#202021' : '#fff' }}>© 2022 <a href="#" style={{ color: props.theme === 'light' ? '#f24b74' : '#1E7CC0' }}>sparkweb solutions</a> and resources all rights reserved</p>
+              <p style={{ color: props.theme === 'light' ? '#202021' : '#fff' }}>© 2022 <a href="/" style={{ color: props.theme === 'light' ? '#f24b74' : '#1E7CC0' }}>sparkweb solutions</a> and resources all rights reserved</p>
             </div>
           </div>
         </div>

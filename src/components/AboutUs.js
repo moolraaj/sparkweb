@@ -1,12 +1,13 @@
 import React from 'react'
- 
-
+import ContactForm from './ContactForm'
+  
 export default function AboutUs(props) {
     return (
         <>
       
    
   
+ 
 
             <div className='about-outer'>
                 <div className='about-inner'>
@@ -19,7 +20,10 @@ export default function AboutUs(props) {
                             
                             <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly 
                              used to demonstrate the visual form of a document or a typeface without relying 
-                             on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>                     </div>
+                             on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p> 
+                             <ContactForm theme={props.theme}/> 
+                             
+                                                </div>
                         <div className='about-right-section'>
                             <div className="about-first-img">
                                 <img src='my-images/frame-second.png' alt="img"/>
@@ -29,11 +33,11 @@ export default function AboutUs(props) {
                             </div>
                         </div>
                     </div>
+                    
 
                 </div>
             </div> 
-            
-        </>
+         </>
     )
 }
 
