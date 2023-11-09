@@ -11,14 +11,7 @@ server.use(cors())
 
 server.use('/userinformation', allUsers.router )
 
-
- 
- 
-
- 
-
-
  server.listen(9200)
 
 
-//sparkweb995@gmail.com
+ 

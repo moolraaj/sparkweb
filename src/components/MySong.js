@@ -9,7 +9,7 @@ const MySong = ({theme}) => {
   const loaderTrue=<Bars
   height='70'
   width='30'
-  color={theme === 'light' ? '#000' : '#fff'}
+  color={theme === 'light' ? '#f24b74' : '#fff'}
   radius='10'
  
   

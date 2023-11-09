@@ -5,10 +5,13 @@ import {
   faInstagram,
   faSquareWhatsapp
 } from "@fortawesome/free-brands-svg-icons";
-export default function Footer(props) {
+export default function Footer({theme}) {
   return (
     <>
-      <div className="footer-first-outer" style={{ background: props.theme === 'light' ? '#f24b74' : '#1E7CC0' }}>
+    <div className='footer-wrapper'>
+
+   
+      <div className="footer-first-outer" style={{ background: theme === 'light' ? '#f24b74' : '#1E7CC0' }}>
         <div className="footer-first-inner">
           <div className="footer-first-flex">
             <div className="footer-first-div footer-div">
@@ -41,13 +44,14 @@ export default function Footer(props) {
         <div className="second-footer-inner">
           <div className="second-footer-flex">
             <div className="footer-second-left">
-              <p style={{ color: props.theme === 'light' ? '#202021' : '#fff' }}>Near Central Bank Tara Mata House kasumpti,172001,HP</p>
+              <p style={{ color: theme === 'light' ? '#202021' : '#fff' }}>Near Central Bank Tara Mata House kasumpti,172001,HP</p>
             </div>
             <div className="footer-second-right">
-              <p style={{ color: props.theme === 'light' ? '#202021' : '#fff' }}>© 2022 <a href="/" style={{ color: props.theme === 'light' ? '#f24b74' : '#1E7CC0' }}>sparkweb solutions</a> and resources all rights reserved</p>
+              <p style={{ color: theme === 'light' ? '#202021' : '#fff' }}>© 2022 <a href="http://localhost:3000/" style={{ color: theme === 'light' ? '#f24b74' : '#1E7CC0' }}>sparkweb solutions</a> and resources all rights reserved</p>
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   )

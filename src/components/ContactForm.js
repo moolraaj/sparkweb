@@ -78,7 +78,7 @@ function ContactForm({theme}) {
     <label htmlFor="exampleInputPassword1"  className="form-label modal-lable-type">enter your Phone Number</label>
     <input type="number"  className="form-control modal-input-type" value={phone} id="exampleInputPassword1"   onChange={(e)=>{
       let enterTenDigit=e.target.value
-      if(enterTenDigit.length <=10 ){
+      if(enterTenDigit.length !==10 ){
         setPhone(enterTenDigit)
       }
     

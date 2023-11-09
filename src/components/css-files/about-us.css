@@ -1,0 +1,310 @@
+h1.section-heading {
+    font-size: 4vw;
+    font-family: 'basement';
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+
+ 
+  
+h3.section-heading {
+    font-size: 40px;
+    font-family: 'basement';
+    text-transform: capitalize;
+}
+p.section-para {
+    font-size: 16px;
+    font-family: montserrat;
+    font-weight: 500;
+}
+.module-wrapper {
+    height: 20vw;
+    border-bottom: 1px solid #F24B74;
+    padding: 25px;
+    background: #fff;
+    z-index: 11;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 20px;
+}
+.module-inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.module-number {
+    font-size: 80px;
+    font-family: 'basement';
+    text-transform: capitalize;
+}
+
+.module-heading {
+    font-size: 26px;
+    font-family: 'basement';
+    text-transform: capitalize;
+}
+
+.section-para {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: montserrat;
+}
+.module-our-team-wrapper {
+  transition: top 1s ease-in-out; 
+}
+ 
+  
+
+.module-our-team-wrapper.sticky {
+  position: sticky;
+  top: 80px!important;
+  z-index: 1; 
+}
+ 
+.about-tab-titles {
+    order: 2;
+    position: absolute;
+    bottom: 190px;
+}
+ 
+ul.about-tab-tab li {
+    font-size: 18px;
+    font-family: montserrat;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.ourservices-section-outer {
+    padding: 20px 10px 60px 10px;
+}
+.abut-tab-description p {
+    margin: 0px;
+    font-family: montserrat;
+    font-weight: 500;
+}
+.about-our-team {
+    padding: 80px 10px 0px!important;
+}
+.about-out-team-prop{
+    padding: 0px 10px 80px!important;
+}
+.about-join-our-journey{
+    padding: 0px 10px 80px!important;
+}
+h4.about-top-heading-four {
+    font-family: 'basement';
+    font-size: 30px;
+}
+.abut-tab-description {
+    max-width: 1000px;
+    margin-right: auto;
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.abut-tab-description p {
+    padding: 16px;
+    margin: 0px;
+    order: 2;
+}
+
+.marquee-slides {
+    position: absolute;
+}
+.tab-images {
+    position: relative;
+}
+.tab-images img {
+    width: 150px;
+    height: 100px!important;
+    object-fit: cover;
+}
+.about-ul-wrapper ul {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+    margin: 0px 0px 0px 0px;
+    
+}
+.about-ul-wrapper ul li {
+    cursor: pointer;
+    
+}
+
+.marquee-slides h3 {
+    color: #fff;
+    font-family: montserrat;
+    text-transform: capitalize;
+    font-size: 12px;
+    background: #808080a3;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    height: 12px;
+}
+.about-tab-wraper {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1400px;
+    align-items: flex-end;
+    position: relative;
+}
+.abut-tab-description img {
+    height: 560px!important;
+    object-fit: cover;
+}
+
+li.about-tab-tab.tab-running {
+    
+    animation: hover 1s linear alternate infinite;
+}
+@keyframes hover {
+    0% {
+        transform: scale(1); 
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+@media only screen and (max-width:1268px){
+    .about-tab-wraper {
+        max-width: 1000px;
+    }
+    .abut-tab-description {
+        max-width: 800px;
+    }
+     
+     
+}
+
+@media only screen and (max-width:1024px){
+    .abut-tab-description img {
+        height: 400px!important;
+        object-fit: cover;
+    }
+    .about-tab-wraper {
+        max-width: 800px;
+    }
+    .abut-tab-description {
+        max-width: 600px;
+    }
+    .tab-images img {
+        width: 100px;
+        height: 70px!important;
+        object-fit: cover;
+    }
+     
+}
+
+@media only screen and (max-width:768px){
+    .module-number {
+        font-size: 56px;
+        
+    }
+    .about-tab-wraper {
+        max-width: 700px;
+    }
+    .abut-tab-description {
+        max-width: 500px;
+    }
+    .abut-tab-description img {
+        height: 300px!important;
+        object-fit: cover;
+    }
+    .about-tab-titles {
+        order: 2;
+        position: absolute;
+        bottom: 180px;
+    }
+    .tab-images img {
+        width: 72px;
+        height: 48px!important;
+        object-fit: cover;
+    }
+    .module-wrapper {
+        height: auto;
+    }
+    h1.section-heading {
+        font-size: 28px;
+    }
+    h4.about-top-heading-four {
+        font-family: 'basement';
+        font-size: 30px;
+    }
+    .about-our-team {
+        padding: 50px 10px 0px!important;
+    }
+    .about-out-team-prop {
+        padding: 0px 10px 50px!important;
+    }
+    .about-join-our-journey {
+        padding: 0px 10px 40px!important;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .abut-tab-description p {
+        padding: 10px;
+        
+        
+    }
+    .marquee-slides h3 {
+        padding: 6px; 
+    }
+    .tab-images img {
+        width: 70px;
+        height: 36px!important;
+        object-fit: cover;
+    }
+    .about-tab-titles {
+        order: 2;
+        position: static;
+        bottom: 0;
+    }
+    .about-ul-wrapper ul {
+       
+        column-gap: 14px;
+        
+    }
+    .abut-tab-description img {
+        height: 250px!important;
+        object-fit: cover;
+    }
+    .about-tab-wraper {
+        max-width: 100%;
+    }
+    .abut-tab-description {
+        max-width: 100%;
+    }
+    .about-tab-wraper {
+        display: flex;
+        justify-content: flex-start;
+        max-width: 1400px;
+        align-items: flex-start;
+        position: relative;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .module-wrapper {
+        grid-template-columns: 1fr;
+        padding: 30px 0px;
+        
+    }
+    .module-heading {
+        font-size: 20px;
+      
+    }
+}
+@media only screen and (max-width:480px){
+    .module-number {
+        font-size: 36px;
+    }
+}

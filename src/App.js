@@ -1,18 +1,31 @@
 import './components/style.css'
-import React, { useState } from 'react'
-import Navbar from './components/Navbar';
-import Herosection from './components/Herosection';
-import AboutUs from './components/AboutUs';
-import WhatWeHaveDone from './components/WhatWeHaveDone';
-import Testimonials from './components/Testimonials';
+ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ContactUs from './components/ContactUs';
 import OurServices from './components/OurServices';
-import sun from './components/images/sun.png'
+import AboutUs from './components/AboutUs';
+
+ 
+ import sun from './components/images/sun.png'
 import moon from './components/images/moon.png'
+ import { useState } from 'react';
+ 
+  
+import Home from './components/Home';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ErrorPage from './components/ErrorPage';
  
  
  
+    
+  
  
+
+
+  
+   
+  
+  
     
  
  
@@ -21,7 +34,7 @@ import moon from './components/images/moon.png'
 // import { Canvas } from '@react-three/fiber';
 // import { OrbitControls } from '@react-three/drei';
 // import { Model } from './components/Newdance';
- 
+
 
  
  
@@ -41,38 +54,62 @@ function App() {
    const toggleMode = () => {
       if (theme === 'light') {
          setTheme('dark');
-         document.body.style.background = "#0C073E";
-          
-         setImg(moon)
+         document.body.style.background='rgba(12, 7, 62, 0.97)' 
          
-         
-          
+         setImg(moon)  
       }
       else {
          setTheme('light');
-         document.body.style.background = "#fff";
-         
          setImg(sun)
-        
+         document.body.style.background='#fff'
         
       }
 
    }
     
-
-  
+    
+   
 
    return (
-
+ 
       <>
-      <div className='app'>
-        
 
+      <div className='app'>
+      
+
+   
+ 
+          <BrowserRouter>
+          <Navbar theme={theme}/>
+         <Routes>
+         <Route path='/' element={<Home toggleMode={toggleMode} img={img} theme={theme}/>}/>
+         <Route path='/about-us' element={<AboutUs toggleMode={toggleMode} img={img} theme={theme}/>}/>  
+         <Route path='/contact-us' element={<ContactUs toggleMode={toggleMode} img={img} theme={theme}/>}/>
+         <Route path='/our-services' element={<OurServices toggleMode={toggleMode} img={img} theme={theme}/>}/>
+         <Route path='*' element={<ErrorPage toggleMode={toggleMode} img={img} theme={theme}/>}/>
+      
+        
+         </Routes>
+         </BrowserRouter> 
+         
+        <Footer theme={theme} toggleMode={toggleMode} /> 
+        
+        
+       
+         
+
+
+        
+     
+      
+        
+       
       
         
  
-         {/* --navbar-section--*/}
-         <Navbar  theme={theme} toggleMode={toggleMode} />
+          
+        
+          
 
 
          {/* --hero-section--*/}
@@ -89,42 +126,12 @@ function App() {
       </mesh>
          </Canvas> */}
       
-         
-             
 
-
-
-
-         <Herosection   img={img} theme={theme} toggleMode={toggleMode} />
-
-             
-         
-          
-
-
-         {/* --about-us-aection--*/}
-         
-         <AboutUs   theme={theme} toggleMode={toggleMode} />
-         
-
-         {/* --our-services-section--*/}
-         <OurServices theme={theme} toggleMode={toggleMode} />
-
-
-         {/* --what-we-have-done-section--*/}
-         <WhatWeHaveDone theme={theme} toggleMode={toggleMode} />
-
-
-         {/* --testimonials-section--*/}
-         <Testimonials theme={theme} toggleMode={toggleMode} />
-
-
-         {/* --footer-section--*/}
-         <Footer theme={theme} toggleMode={toggleMode} /> 
           
          </div>
 
       </>
+      
    );
 }
 

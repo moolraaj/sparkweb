@@ -20,5 +20,5 @@ let userSchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('allusers', userSchema)
+module.exports = mongoose.model('attendies', userSchema)
  
